@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "kumbh";
+  src: url(../fonts/KumbhSans-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: "kumbhB";
+  src: url(../fonts/KumbhSans-Bold.ttf);
+  font-weight: 700;
+}
+body {
+  font-family: kumbh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  cursor: default;
+  background-color: hsl(185, 75%, 39%);
+  overflow: hidden;
+  position: relative;
+}
+body::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("../images/bg-pattern-top.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: -50%;
+  left: 0%;
+  z-index: -1;
+}
+body::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  bottom: -50%;
+  right: -60%;
+  z-index: -1;
+}
+body main section {
+  width: 330px;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+body main section .topbg {
+  background: url("../images/bg-pattern-card.svg");
+  width: 100%;
+  height: 140px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+body main section .top {
+  position: relative;
+  top: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+body main section .top_img {
+  width: 100px;
+}
+body main section .top_img img {
+  width: 100%;
+  border-radius: 100%;
+  border: 0.4rem solid white;
+}
+body main section .top h1 {
+  font-size: 18px;
+  font-family: kumbhB;
+  margin-top: 1.2rem;
+}
+body main section .top h1 span {
+  color: hsl(0, 0%, 59%);
+  font-size: 18px;
+  font-family: kumbh;
+}
+body main section .top h2 {
+  color: hsl(227, 10%, 46%);
+  font-size: 1rem;
+  margin-top: 0.4rem;
+}
+body main section .bot {
+  border-top: 1px solid hsl(0, 0%, 59%);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  margin-top: -25px;
+}
+body main section .bot div {
+  text-align: center;
+  margin: 1.5rem 1.3rem;
+}
+body main section .bot div h3 {
+  color: hsl(229, 23%, 23%);
+  font-family: kumbhB;
+  font-size: 18px;
+}
+body main section .bot div span {
+  font-weight: 400;
+  color: hsl(227, 10%, 46%);
+  font-size: 0.7rem;
+}/*# sourceMappingURL=style.css.map */
